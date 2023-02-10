@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="calculo">
+                <p class="operacao" id="conta">0</p>
+                <div class="resultado">
+                    <p>=</p>
+                    <h2 id="resultado"></h2>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td><Button id="CE" onclick="zerarValor()" >CE</Button></td>
+                    <td><button id="C" onclick="zerarDados()">C</button></td>
+                    <td><button id="porcetagem" onclick="transformaEmPorcetagem()">%</button></td>
+                    <td><button class="operador" id="divisao" onclick="adicionarOperador('div')">&#247;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="adicionarValor(7)">7</button></td>
+                    <td><button onclick="adicionarValor(8)">8</button></td>
+                    <td><button onclick="adicionarValor(9)">9</button></td>
+                    <td><button class="operador" onclick="adicionarOperador('mult')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="adicionarValor(4)">4</button></td>
+                    <td><button onclick="adicionarValor(5)">5</button></td>
+                    <td><button onclick="adicionarValor(6)">6</button></td>
+                    <td><button class="operador" onclick="adicionarOperador('sub')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="adicionarValor(1)">1</button></td>
+                    <td><button onclick="adicionarValor(2)">2</button></td>
+                    <td><button onclick="adicionarValor(3)">3</button></td>
+                    <td><button class="operador" onclick="adicionarOperador('soma')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inverterValor()">+/-</button></td>
+                    <td><button onclick="adicionarValor(0)">0</button></td>
+                    <td><button onclick="adicionarDecimal()">,</button></td>
+                    <td><button class="operador-igual" onclick="limparConta()">=</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
